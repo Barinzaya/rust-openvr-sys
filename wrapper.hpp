@@ -5,6 +5,7 @@
 // https://steamcommunity.com/app/358720/discussions/0/405692758722144628/
 // https://github.com/ValveSoftware/openvr/commit/6f671fc80947dbccc4a9d27bd1b89d6038d94637
 S_API intptr_t VR_InitInternal( EVRInitError *peError, EVRApplicationType eType );
+S_API bool VR_GetRuntimePath( char *pchPathBuffer, uint32_t unBufferSize, uint32_t *punRequiredBufferSize );
 S_API void VR_ShutdownInternal();
 S_API bool VR_IsHmdPresent();
 S_API intptr_t VR_GetGenericInterface( const char *pchInterfaceVersion, EVRInitError *peError );

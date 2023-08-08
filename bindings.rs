@@ -14229,6 +14229,13 @@ extern "C" {
     pub fn VR_InitInternal(peError: *mut EVRInitError, eType: EVRApplicationType) -> isize;
 }
 extern "C" {
+    pub fn VR_GetRuntimePath(
+        pchPathBuffer: *mut ::std::os::raw::c_char,
+        unBufferSize: u32,
+        punRequiredBufferSize: *mut u32,
+    ) -> bool;
+}
+extern "C" {
     pub fn VR_ShutdownInternal();
 }
 extern "C" {
